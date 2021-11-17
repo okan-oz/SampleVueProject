@@ -37,10 +37,10 @@
                 </div>
 
                
-                <button class="btn btn-lg btn-primary btn-block" v-on:click="login" type="button" >Sign in</button>
+                <button class="btn btn-lg btn-primary btn-block" v-on:click="login2" type="button" >Sign in</button>
 
                 <div v-if="!isSuccess">
-                    {{errorMessage}}
+                    {{errorResponseMessage}}
                 </div>
             </div>
             <div v-if="isLoading">

@@ -41,6 +41,9 @@ namespace SampleVueProject.Login.Controllers
         public IActionResult  Get()
         {
             Result<LoginResponse> result = new Result<LoginResponse> { RequestTime = DateTime.Now };
+            Error error = new Error { ErrorCode="errro_code",ErrorMessage="bu bir hata mesajıdır değil mi ??",ShowUser=true};
+
+
 
             LoginResponse loginResponse = new LoginResponse();
             loginResponse.Name = "Okan";
@@ -49,12 +52,13 @@ namespace SampleVueProject.Login.Controllers
 
            
             result.Data = loginResponse;
-            result.IsSuccess = true;
+            result.Error = error;
+            result.IsSuccess = false;
             result.RequestId = Guid.NewGuid().ToString();
 
             result.ResponseTime = DateTime.Now;
             ObjectResult objectResult = new ObjectResult(result);
-            objectResult.StatusCode = 200;
+            objectResult.StatusCode = 500;
       
 
             return objectResult;

@@ -9,6 +9,7 @@ namespace SampleVueProject.Login.Model
         public bool IsSuccess { get; set; }
         public string RequestId { get; set; }
         public T Data { get; set; }
+        public Error Error { get; set; }
               
     }
 
@@ -16,6 +17,7 @@ namespace SampleVueProject.Login.Model
     {
         public string ErrorCode { get; set; }
         public string ErrorMessage { get; set; }
+        public bool ShowUser { get; set; }
 
     }
 }
