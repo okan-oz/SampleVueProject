@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{12CAA2B2-87EF-4AC1-A27D-8152F51374B3}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="SampleVueProject.Login/wwwroot/pages/Login.html" Line="40" Column="98" />
+      <File FileName="SampleVueProject.Login/wwwroot/pjs/Login.js" Line="38" Column="48" />
+      <File FileName="SampleVueProject.Login/Program.cs" />
+      <File FileName="SampleVueProject.Login/Controllers/WeatherForecastController.cs" />
+      <File FileName="SampleVueProject.Login/Model/Result.cs" />
+      <File FileName="SampleVueProject.Login/Model/LoginResponse.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SampleVueProject" expanded="True" selected="True">
+            <Node name="SampleVueProject.Login" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="pages" expanded="True" />
+                <Node name="pjs" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SampleVueProject.Login PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

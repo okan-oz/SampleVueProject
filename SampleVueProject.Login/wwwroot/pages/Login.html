@@ -1,0 +1,54 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <title>Login</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/floating-labels/">
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/floating-labels.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+    <script type="text/javascript" src="../pjs/login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+</head>
+
+<body>
+    <form class="form-signin">
+        <div id="app">
+            <div v-if="!isLoading">
+                <div class="text-center mb-4">
+                    <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                    <h1 class="h3 mb-3 font-weight-normal">Floating labels</h1>
+                    <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>
+                </div>
+
+                <div class="form-label-group">
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <label for="inputEmail">Email address</label>
+                </div>
+
+                <div class="form-label-group">
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <label for="inputPassword">Password</label>
+                </div>
+
+               
+                <button class="btn btn-lg btn-primary btn-block" v-on:click="login" type="button" >Sign in</button>
+
+                <div v-if="!isSuccess">
+                    {{errorMessage}}
+                </div>
+            </div>
+            <div v-if="isLoading">
+                Yükleniyor
+            </div>
+            <p class="mt-5 mb-3 text-muted text-center">&copy; 2022</p>
+
+        </div>
+    </form>
+</body>
+</html>
